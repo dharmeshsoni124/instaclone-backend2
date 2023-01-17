@@ -36,7 +36,7 @@ app.listen(port, (err) => {
   }
 });  
 
-mongoose.connect(process.env.DB_HOST,{ useNewUrlParser: true, useUnifiedTopology: true },
+mongoose.connect(process.env.DB_URL,{ useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("successfully connected to db");
   },
